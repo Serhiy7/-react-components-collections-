@@ -1,14 +1,14 @@
-import FriendListItem from '../FriendListItem/FriendListItem'
-import './FriendList.css'
+import FriendListItem from '../FriendListItem/FriendListItem';
+import { FList } from './FriendList.styled.jsx';
 
 function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <FList className="friend-list">
       {friends.map(friend => (
         <FriendListItem key={friend.id} {...friend} />
       ))}
-    </ul>
-  )
+    </FList>
+  );
 }
 
-export default FriendList
+export default FriendList;

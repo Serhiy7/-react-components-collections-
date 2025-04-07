@@ -1,14 +1,6 @@
-/* Стили списка друзей */
-.friend-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 300px; /* можно задать желаемую ширину */
-  margin: 0 auto; /* центрируем */
-}
+import styled from '@emotion/styled';
 
-/* Стили элемента списка (переименован в friend-item) */
-.friend-item {
+export const FItem = styled.li`
   display: flex;
   align-items: center;
   gap: 10px;
@@ -18,23 +10,23 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 10px;
   font-family: sans-serif; /* если нужно */
-}
+`;
 
-.friend-item .status {
+export const Status = styled.span`
   font-size: 24px; /* Emoji статус может быть крупнее */
-  margin-right: 10px;
-}
+  //   margin-right: 10px;
+`;
 
-.friend-item .avatar {
+export const Avatar = styled.img`
   border-radius: 50%;
   width: 48px;
   height: 48px;
   object-fit: cover;
-}
+`;
 
-.friend-item .name {
+export const Name = styled.p`
   font-size: 18px;
   font-weight: 600;
   color: #333;
   margin: 0;
-}
+`;
