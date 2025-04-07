@@ -1,0 +1,30 @@
+.transaction-history {
+  width: 600px; /* Ширина таблицы */
+  margin: 20px auto; /* Центрируем и добавляем отступ сверху/снизу */
+  border-collapse: collapse; /* Схлопываем границы ячеек */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Выравниваем текст в ячейках */
+  font-family: sans-serif;
+}
+
+.transaction-history thead th {
+  background-color: #00bcd4; /* Бирюзовый цвет заголовка */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.transaction-history th,
+.transaction-history td {
+  border: 1px solid #ddd; /* Светлая граница между ячейками */
+  padding: 8px 12px;
+}
+
+.transaction-history tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Цвет фона для чётных строк */
+}
+
+.transaction-history tbody tr:hover {
+  background-color: #e2e2e2; /* Эффект при наведении (опционально) */
+}

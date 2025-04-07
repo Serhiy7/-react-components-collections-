@@ -1,0 +1,68 @@
+.statistics {
+  /* Размер карточки и отступы */
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Если нужны скруглённые углы для нижней части */
+}
+
+/* Заголовок */
+.title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #666666;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* Список элементов */
+.stat-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Общий стиль для каждого элемента списка */
+.item {
+  background-color: #4ff;
+  flex: 1;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #ffffff; /* Текст белый */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* Можно задать цвет для каждого элемента через nth-child или динамически */
+}
+.friend-list {
+  padding: 0;
+}
+/* Пример раскраски через nth-child (для 4 элементов) */
+.item:nth-child(1) {
+  background-color: #4fc4f7; /* голубой */
+}
+.item:nth-child(2) {
+  background-color: #a43cf3; /* фиолетовый */
+}
+.item:nth-child(3) {
+  background-color: #e54c66; /* красный */
+}
+.item:nth-child(4) {
+  background-color: #20b8c5; /* бирюзовый */
+}
+
+/* Можно добавлять больше цветов или динамически генерировать их */
+
+.label {
+  font-size: 12px;
+  /* Можно добавить ещё стили, если нужно */
+}
+
+.percentage {
+  font-size: 18px;
+  font-weight: 700;
+}

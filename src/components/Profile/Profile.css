@@ -1,0 +1,84 @@
+.profile {
+  /* Размер и расположение */
+  width: 250px;
+  margin: 20px auto;
+  /* Фон, скругления, тень */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Центрируем текст */
+  text-align: center;
+  /* Шрифт */
+  font-family: sans-serif;
+  /* Чтобы нижняя граница stats прилегала */
+  overflow: hidden;
+}
+
+.description {
+  /* Внутренние отступы для «шапки» карточки */
+  padding: 30px;
+}
+
+.avatar {
+  /* Размер и форма аватара */
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover; /* Если хотите, чтобы изображение обрезалось по кругу */
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #2e2e2e;
+}
+
+.tag {
+  font-size: 14px;
+  color: #888888;
+  margin: 8px 0;
+}
+
+.location {
+  font-size: 14px;
+  color: #888888;
+  margin: 0;
+}
+
+.stats {
+  /* Горизонтальная панель со статистикой */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f7f9fc;
+  border-top: 1px solid #e4e9f0;
+}
+
+.stats li {
+  /* Каждому блоку stats даём одинаковую ширину */
+  flex: 1;
+  padding: 15px 0;
+  border-right: 1px solid #e4e9f0;
+}
+
+/* Убираем правую границу у последнего элемента */
+.stats li:last-child {
+  border-right: none;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  color: #888888;
+  margin-bottom: 5px;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2e2e2e;
+}
