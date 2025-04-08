@@ -1,4 +1,6 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const Prof = styled.div`
   /* Размер и расположение */
   width: 250px;
   margin: 20px auto;
@@ -12,73 +14,69 @@
   font-family: sans-serif;
   /* Чтобы нижняя граница stats прилегала */
   overflow: hidden;
-}
+`;
 
-.description {
-  /* Внутренние отступы для «шапки» карточки */
+export const Description = styled.div`
   padding: 30px;
-}
+`;
 
-.avatar {
-  /* Размер и форма аватара */
+export const Avatar = styled.img`
   width: 100px;
   height: 100px;
   display: block;
   margin: 0 auto 20px;
   border-radius: 50%;
-  object-fit: cover; /* Если хотите, чтобы изображение обрезалось по кругу */
-}
+  object-fit: cover;
+`;
 
-.name {
+export const Name = styled.p`
   font-size: 18px;
   font-weight: 700;
   margin: 0;
   color: #2e2e2e;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
   font-size: 14px;
   color: #888888;
   margin: 8px 0;
-}
+`;
 
-.location {
+export const Location = styled.p`
   font-size: 14px;
   color: #888888;
   margin: 0;
-}
+`;
 
-.stats {
-  /* Горизонтальная панель со статистикой */
+export const Stats = styled.ul`
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: #f7f9fc;
   border-top: 1px solid #e4e9f0;
-}
+`;
 
-.stats li {
-  /* Каждому блоку stats даём одинаковую ширину */
+export const StatsItem = styled.li`
   flex: 1;
   padding: 15px 0;
   border-right: 1px solid #e4e9f0;
-}
 
-/* Убираем правую границу у последнего элемента */
-.stats li:last-child {
-  border-right: none;
-}
+  /* если это последний элемент, убираем правую границу */
+  &:last-of-type {
+    border-right: none;
+  }
+`;
 
-.label {
+export const Label = styled.span`
   display: block;
   font-size: 12px;
   color: #888888;
   margin-bottom: 5px;
-}
+`;
 
-.quantity {
+export const Quantity = styled.span`
   font-size: 16px;
   font-weight: 700;
   color: #2e2e2e;
-}
+`;

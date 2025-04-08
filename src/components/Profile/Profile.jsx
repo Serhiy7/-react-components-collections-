@@ -1,29 +1,40 @@
-import "./Profile.css";
+import {
+  Prof,
+  Description,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  Stats,
+  StatsItem,
+  Label,
+  Quantity,
+} from './Profile.styled.jsx';
 function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <Prof className="profile">
+      <Description className="description">
+        <Avatar src={avatar} alt="User avatar" className="avatar" />
+        <Name className="name">{username}</Name>
+        <Tag className="tag">@{tag}</Tag>
+        <Location className="location">{location}</Location>
+      </Description>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats className="stats">
+        <StatsItem>
+          <Label className="label">Followers</Label>
+          <Quantity className="quantity">{stats.followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label className="label">Views</Label>
+          <Quantity className="quantity">{stats.views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label className="label">Likes</Label>
+          <Quantity className="quantity">{stats.likes}</Quantity>
+        </StatsItem>
+      </Stats>
+    </Prof>
   );
 }
 

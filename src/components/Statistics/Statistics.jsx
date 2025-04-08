@@ -1,19 +1,26 @@
-import "./Statistics.css";
+import {
+  StatisticsWrapper,
+  Title,
+  StatList,
+  StatItem,
+  Label,
+  Percentage,
+} from './Statistics.styled';
 
 function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
+    <StatisticsWrapper className="statistics">
+      <Title className="title">{title}</Title>
 
-      <ul className="stat-list">
+      <StatList className="stat-list">
         {stats.map(({ id, label, percentage }) => (
-          <li className="item" key={id}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
-          </li>
+          <StatItem className="item" key={id}>
+            <Label className="label">{label}</Label>
+            <Percentage className="percentage">{percentage}%</Percentage>
+          </StatItem>
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </StatisticsWrapper>
   );
 }
 
