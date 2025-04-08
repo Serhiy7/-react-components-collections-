@@ -1,8 +1,8 @@
-import './TransactionHistory.css'
+import { Table } from './TransactionHistory.styled.jsx';
 
 function TransactionHistory({ items }) {
   return (
-    <table className="transaction-history">
+    <Table>
       <thead>
         <tr>
           <th>Type</th>
@@ -20,8 +20,8 @@ function TransactionHistory({ items }) {
           </tr>
         ))}
       </tbody>
-    </table>
-  )
+    </Table>
+  );
 }
 
-export default TransactionHistory
+export default TransactionHistory;
