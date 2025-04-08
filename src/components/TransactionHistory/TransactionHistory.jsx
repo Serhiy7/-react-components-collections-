@@ -17,6 +17,7 @@ function TransactionHistory({ items }) {
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
+            <td>{currency}</td>
           </tr>
         ))}
       </tbody>
